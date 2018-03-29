@@ -1,5 +1,9 @@
 class Bottles {
     public static void main(String args[]) {
+        writeLyrics();
+    }
+
+    public static void writeLyrics() {
         String s = "s";
         for (int beers = 99; beers > -1; beers--) {
             System.out.print(beers + " bottle" + s + " of beer on the wall,");
