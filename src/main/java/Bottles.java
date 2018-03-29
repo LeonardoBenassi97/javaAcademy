@@ -7,8 +7,8 @@ class Bottles {
 
     public static void writeLyrics() {
         String s = "s";
-        for (int beers = 99; beers > -1; beers--) {
             final PrintStream out = System.out;
+        for (int beers = 99; beers > -1; beers--) {
             out.print(beers + " bottle" + s + " of beer on the wall,");
             out.println(beers + " bottle" + s + " of beer,");
             if (beers == 0) {
