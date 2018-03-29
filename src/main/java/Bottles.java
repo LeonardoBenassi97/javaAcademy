@@ -2,12 +2,11 @@ import java.io.PrintStream;
 
 class Bottles {
     public static void main(String args[]) {
-        writeLyrics();
+        writeLyrics(System.out);
     }
 
-    public static void writeLyrics() {
+    public static void writeLyrics(PrintStream out) {
         String s = "s";
-            final PrintStream out = System.out;
         for (int beers = 99; beers > -1; beers--) {
             out.print(beers + " bottle" + s + " of beer on the wall,");
             out.println(beers + " bottle" + s + " of beer,");
